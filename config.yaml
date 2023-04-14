@@ -17,23 +17,25 @@ settings:
 monitors:
   - id: al-ain-com # unique identifier
     name: al-ain.com
-    description: 'You write code. They handle the rest.' # default=empty
+    description: 'al-ain.com.' # default=empty
     url: 'https://al-ain.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: api-al-ain.net
+    name: api-al-ain.net
+    description: 'Alain API.'
+    url: 'https://api.al-ain.net'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+    - id: newsdesk-cloud
+    name: newsdesc.cloud
+    description: 'Newsdesc.'
+    url: 'https://newsdesc.cloud'
     method: GET
     expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
